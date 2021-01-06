@@ -1,0 +1,93 @@
+html {
+  height: 100%;
+  font-size: xx-large;
+}
+
+body {
+  background-color: #171123;
+  height: 100%;
+}
+
+body section {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  height: 100%;
+}
+
+section h1 {
+  color: #414770;
+  width: 80%;
+  text-align: right;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+#current-value {
+  grid-area: current-value;
+}
+
+#calculator-buttons {
+  grid-area: calculator-buttons;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  grid-template-rows: repeat(5, 13%);
+  grid-template-columns: repeat(4, 20%);
+  grid-template-areas:
+            "clear-entry clear negate divide"
+            "one two three multiply"
+            "four five six subtract"
+            "seven eight nine add"
+            "zero zero decimal equals";
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+#current-value {
+  grid-area: current-value;
+}
+
+input {
+  font-size: 50px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #414770;
+  margin: 10px;
+  padding: 10px;
+  width: 90%;
+  height: 90%;
+
+  border-width: 0;
+  border-radius: 50px;
+  background: #171123;
+  box-shadow:  12px 12px 33px #09070e,
+             -12px -12px 33px #251b38;
+}
+
+input[id=zero] {
+  width: 95%;
+  text-align: left;
+}
+
+input:hover {
+  border-radius: 50px;
+  background: #171123;
+  box-shadow: inset 12px 12px 33px #09070e,
+            inset -12px -12px 33px #251b38;
+}
+
+.special {
+  color: #171123;
+  border-radius: 50px;
+  background: #414770;
+}
+
+.special:hover {
+  border-radius: 50px;
+background: #414770;
+box-shadow: inset 20px 20px 60px #373c5f,
+            inset -20px -20px 60px #4b5281;
+}
