@@ -1,3 +1,3 @@
 # Calculator
 
-[View Live](https://ezraelette.github.io/Calculator/)
+[View Live](https://ezraellette.github.io/Calculator/)
